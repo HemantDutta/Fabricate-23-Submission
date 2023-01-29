@@ -256,3 +256,30 @@ nav a:hover{
         transform: translateY(-140px);
     }
 }
+
+
+/*Section 9*/
+
+.sect9{
+    height: 250px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 100px;
+}
+
+.sect9 .button-test button {
+    font-size: 2em;
+    padding: 10px 24px;
+    background-color: transparent;
+    color: var(--primary);
+    border: 5px inset var(--primary);
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.sect9 .button-test button:hover{
+    transform: scale(0.9);
+    background-color: var(--primary);
+    color: white;
+    border: 5px solid var(--primary);
+}

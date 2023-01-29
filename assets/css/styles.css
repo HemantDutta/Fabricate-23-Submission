@@ -110,3 +110,46 @@ nav a:hover{
 .sect2 h1{
     font-weight: bold;
 }
+
+/*Section 3*/
+
+.sect3 {
+    margin-top: 350px;
+    font-family: Unbounded, sans-serif;
+    height: 400px;
+    position: relative;
+}
+
+.sect3 span{
+    font-weight: bold;
+}
+
+.bri{
+    position: absolute;
+}
+
+.br1, .br2, .br3 {
+    top: 10%;
+    left: 0;
+}
+
+.br4, .br5, .br6{
+    bottom: 10%;
+    right: 0;
+}
+
+.br2{
+    left: 10%;
+}
+
+.br3{
+    left: 20%;
+}
+
+.br5{
+    right: 10%;
+}
+
+.br6{
+    right: 20%;
+}

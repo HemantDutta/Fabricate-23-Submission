@@ -1,0 +1,59 @@
+:root{
+    --primary: #e7ac5a;
+    --background: #212529
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary);
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+nav .list a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background-color: var(--primary);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+nav .list a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.list{
+    display: flex;
+}
+
+nav a:focus{
+    color: white;
+}
+
+nav a:hover{
+    color: #eebc9d;
+}
+
+.mind-primary{
+    color: var(--primary);
+}
+
+
+@media (max-width: 768px) {
+    .list{
+        display: none;
+    }
+}

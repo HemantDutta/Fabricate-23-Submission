@@ -1,12 +1,13 @@
 :root{
-    --primary: #e7ac5a;
-    --background: #212529
+    --primary: #f6c288;
+    --background: #252525
 }
 
 body{
     margin: 0;
     padding: 0;
     background-color: var(--background);
+    font-family: sans-serif ;
 }
 
 nav a {
@@ -55,5 +56,43 @@ nav a:hover{
 @media (max-width: 768px) {
     .list{
         display: none;
+    }
+}
+
+
+/*Section 1*/
+
+.sect1 {
+    font-family: Unbounded, sans-serif;
+    margin-top: 250px;
+}
+
+.sect1 h1{
+    font-size: 13vw;
+}
+
+@media (min-width: 576px) {
+ .sect1 h1{
+     font-size: 10vw;
+ }
+}
+@media (min-width: 768px) {
+    .sect1 h1{
+        font-size: 10vw;
+    }
+}
+@media (min-width: 992px) {
+    .sect1 h1{
+        font-size: 10vw;
+    }
+}
+@media (min-width: 1200px) {
+    .sect1 h1{
+        font-size: 8vw;
+    }
+}
+@media (min-width: 1400px) {
+    .sect1 h1{
+        font-size: 7vw;
     }
 }

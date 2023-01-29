@@ -69,6 +69,8 @@ nav a:hover{
 
 .sect1 h1{
     font-size: 13vw;
+    font-weight: bold;
+    transition: all 0.2s ease;
 }
 
 @media (min-width: 576px) {
@@ -95,4 +97,16 @@ nav a:hover{
     .sect1 h1{
         font-size: 7vw;
     }
+}
+
+
+/*Section 2*/
+
+.sect2{
+    margin-top: 350px;
+    text-align: center;
+}
+
+.sect2 h1{
+    font-weight: bold;
 }

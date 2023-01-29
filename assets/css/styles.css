@@ -110,6 +110,7 @@ nav a:hover{
 .sect2{
     margin-top: 350px;
     text-align: center;
+    font-family: Unbounded, sans-serif;
 }
 
 .sect2 h1{
@@ -168,35 +169,36 @@ nav a:hover{
 
 .sect4{
     margin-top: 350px;
+    font-family: Unbounded, sans-serif;
 }
 
 .sect4 h1{
-    font-size: 2.25rem;
+    font-size: 1.9rem;
 }
 
 @media (min-width: 576px) {
     .sect4 h1{
-        font-size: 2.25rem;
+        font-size: 1.9rem;
     }
 }
 @media (min-width: 768px) {
     .sect4 h1{
-        font-size: 3.25rem;
+        font-size: 2.65rem;
     }
 }
 @media (min-width: 992px) {
     .sect4 h1{
-        font-size: 4.25rem;
+        font-size: 3.55rem;
     }
 }
 @media (min-width: 1200px) {
     .sect4 h1{
-        font-size: 4.75rem;
+        font-size: 4.25rem;
     }
 }
 @media (min-width: 1400px) {
     .sect4 h1{
-        font-size: 5rem;
+        font-size: 4.8rem;
     }
 }
 
@@ -225,6 +227,7 @@ nav a:hover{
     margin-top: 350px;
     text-align: center;
     margin-bottom: 350px;
+    font-family: Unbounded, sans-serif;
 }
 
 /*Section 8*/
@@ -233,9 +236,10 @@ nav a:hover{
     height: 500px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 350px;
+    margin-bottom: 200px;
     display: grid;
     place-items: center;
+    font-family: Unbounded, sans-serif;
 }
 
 .sect8 img{
@@ -249,6 +253,7 @@ nav a:hover{
     position: absolute;
     top: 220px;
     left: 35%;
+
 }
 
 @media (min-width: 1200px) {
@@ -265,6 +270,7 @@ nav a:hover{
     display: grid;
     place-items: center;
     margin-bottom: 100px;
+    font-family: Unbounded, sans-serif;
 }
 
 .sect9 .button-test button {
@@ -283,3 +289,119 @@ nav a:hover{
     color: white;
     border: 5px solid var(--primary);
 }
+
+/*Credits*/
+
+.credits{
+    margin-bottom: 50px;
+    font-family: Unbounded, sans-serif;
+}
+
+.credits a{
+    color: var(--primary);
+
+}
+
+
+/*New File*/
+/*Addiction.html*/
+
+/*Sect1*/
+.ad-sect1 {
+    font-family: Unbounded, sans-serif;
+    margin-top: 250px;
+}
+
+.ad-sect1 h1{
+    font-size: 13vw;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.ad-sect1 h1:hover{
+    text-shadow: -15px 5px black;
+    padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+    .ad-sect1 h1{
+        font-size: 10vw;
+    }
+}
+@media (min-width: 768px) {
+    .ad-sect1 h1{
+        font-size: 10vw;
+    }
+}
+@media (min-width: 992px) {
+    .ad-sect1 h1{
+        font-size: 10vw;
+    }
+}
+@media (min-width: 1200px) {
+    .ad-sect1 h1{
+        font-size: 8vw;
+    }
+}
+@media (min-width: 1400px) {
+    .ad-sect1 h1{
+        font-size: 7vw;
+    }
+}
+
+
+/*sect2*/
+
+.ad-sect2{
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.ad-sect2 .ques-box-1, .ques-box-2, .ques-box-3{
+    row-gap: 50px;
+    border-radius: 40px;
+    border: 5px solid var(--primary);
+    padding: 20px 0px;
+}
+
+.ad-sect2 .ques-box-1 .ad-inp, .ques-box-2 .ad-inp, .ques-box-3 .ad-inp{
+    background-color: transparent;
+    color: var(--primary);
+    padding: 20px 40px;
+    border-radius: 40px;
+    border: 5px solid var(--primary);
+    font-weight: bold;
+}
+
+.ad-sect2 .ques-box-1 .ad-inp:focus, .ques-box-2 .ad-inp:focus, .ques-box-3 .ad-inp:focus{
+    outline: none;
+}
+
+.ad-sect2 .ques-box-1 button, .ques-box-2 button, .ques-box-3 button{
+    font-size: 1.5em;
+    padding: 10px 24px;
+    background-color: transparent;
+    color: var(--primary);
+    border: 5px inset var(--primary);
+    font-weight: bold;
+    transition: all 0.2s ease;
+    border-radius: 40px;
+}
+
+.ad-sect2 .ques-box-1 button:hover, .ques-box-2 button:hover, .ques-box-3 button:hover{
+    transform: scale(0.9);
+    background-color: var(--primary);
+    color: white;
+    border: 5px solid var(--primary);
+}
+
+.ques-box-3 select {
+    padding: 20px 40px;
+    background-color: transparent;
+    border: 5px solid var(--primary);
+    color: var(--primary);
+    border-radius: 40px;
+    font-weight: bold;
+}
+
+

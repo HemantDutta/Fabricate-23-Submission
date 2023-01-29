@@ -153,3 +153,39 @@ nav a:hover{
 .br6{
     right: 20%;
 }
+
+/*Section 4*/
+
+.sect4{
+    margin-top: 350px;
+}
+
+.sect4 h1{
+    font-size: 2.25rem;
+}
+
+@media (min-width: 576px) {
+    .sect4 h1{
+        font-size: 2.25rem;
+    }
+}
+@media (min-width: 768px) {
+    .sect4 h1{
+        font-size: 3.25rem;
+    }
+}
+@media (min-width: 992px) {
+    .sect4 h1{
+        font-size: 4.25rem;
+    }
+}
+@media (min-width: 1200px) {
+    .sect4 h1{
+        font-size: 4.75rem;
+    }
+}
+@media (min-width: 1400px) {
+    .sect4 h1{
+        font-size: 5rem;
+    }
+}

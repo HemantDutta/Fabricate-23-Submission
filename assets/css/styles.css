@@ -1,5 +1,5 @@
 :root{
-    --primary: #f6c288;
+    --primary: #f6c496;
     --background: #252525
 }
 
@@ -188,4 +188,23 @@ nav a:hover{
     .sect4 h1{
         font-size: 5rem;
     }
+}
+
+.cards {
+    margin-bottom: 50px;
+    row-gap: 40px;
+}
+
+.card {
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    border-bottom: 10px solid var(--primary);
+    height: 300px;
+}
+
+.card .card-body i {
+    color: var(--primary);
+    font-size: 5em;
+    margin-top: 25%;
 }

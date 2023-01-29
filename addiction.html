@@ -26,7 +26,7 @@
     </nav>
     <!--  Navbar End  -->
     <!--Section 1-->
-    <section class="ad-sect1">
+    <section class="ad-sect1" id="ad-sect1">
         <div class="text">
             <h1 class="mind-primary fw-bolder"><span class="asa1">Don't Lie</span><span class="d-block asa1">To Yourself</span></h1>
             <h3 class="mind-primary">Answer Me Honestly</h3>
@@ -35,31 +35,40 @@
     <!--Section 1 End-->
     <!--  Section 2  -->
     <section class="ad-sect2">
-        <div class="ques-box-1 d-flex flex-column justify-content-center align-items-center">
+        <div class="ques-box-1 d-flex flex-column justify-content-center align-items-center text-center" id="quesbox1">
             <label for="ques-1" class="mind-primary fs-1">How many social media apps do you use?</label>
             <input type="number" name="ques1" id="ques-1" class="ad-inp" placeholder="Be honest...">
-            <button>Next</button>
+            <span id="warn1" class="mind-primary d-none"></span>
+            <button onclick="next1()">Next</button>
         </div>
-        <div class="ques-box-2 d-flex flex-column justify-content-center align-items-center d-none">
+        <div class="ques-box-2 d-flex flex-column justify-content-center align-items-center text-center d-none" id="quesbox2">
             <label for="ques-2" class="mind-primary fs-1">How many hours do you spend of social media?</label>
             <input type="number" name="ques1" id="ques-2" class="ad-inp" placeholder="Be honest...">
-            <button>Next</button>
+            <span id="warn2" class="mind-primary d-none"></span>
+            <button onclick="next2()">Next</button>
         </div>
-        <div class="ques-box-3 d-flex flex-column justify-content-center align-items-center d-none">
+        <div class="ques-box-3 d-flex flex-column justify-content-center align-items-center text-center d-none" id="quesbox3">
             <label for="ques-3" class="mind-primary fs-1">Do you run any kind of business on social media apps?</label>
             <select name="business" id="ques-3">
                 <option value="#" selected>Do you?</option>
                 <option value="y">Yes</option>
                 <option value="n">No</option>
             </select>
-            <button>Next</button>
+            <span id="warn3" class="mind-primary d-none"></span>
+            <button onclick="next3()">Time to find out...</button>
         </div>
     </section>
     <!--  Section 2 End  -->
+    <!--  Section 3  -->
+    <section class="ad-sect3 text-center d-none" id="ad-sect3">
+        <h1 class="fw-bolder text-uppercase mind-primary"><span class="asa3">You're</span><span class="asa3" id="result"></span></h1>
+        <h3 class="mind-primary" id="hope"></h3>
+    </section>
+    <!--  Section 3 End  -->
     <!--  Credits  -->
-      <section class="credits">
+    <section class="credits">
         <span class="mind-primary">2023, <a href="https://github.com/HemantDutta">Hemant Dutta</a></span>
-      </section>
+    </section>
     <!--  Credits End  -->
 </div>
 <!--Content End-->

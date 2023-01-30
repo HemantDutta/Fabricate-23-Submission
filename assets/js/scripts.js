@@ -211,9 +211,9 @@ gsap.to(".boticons", {
     duration: 1
 })
 
-gsap.from(".sa4", {
+gsap.from(".sect4", {
     scrollTrigger: {
-        trigger: ".sa4",
+        trigger: ".sect4",
         onEnter: hsa4dis()
     },
     y: 50,
@@ -276,9 +276,9 @@ gsap.from(".asa1", {
     duration: 1
 });
 
-gsap.from(".asa2", {
+gsap.from(".ad-sect2", {
     scrollTrigger: {
-        trigger: ".asa2",
+        trigger: ".ad-sect2",
     },
     y: 50,
     stagger: 1,

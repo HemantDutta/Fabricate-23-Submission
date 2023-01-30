@@ -90,7 +90,7 @@ function getResult(){
                 document.getElementById('hope').innerHTML = `You're good! But if you still want to know more about this, click <a href="help.html" class="hope-link">here</a>`;
             }
             else if(hours>=2 && !business){
-                document.getElementById('result').innerText = "addicted";
+                document.getElementById('result').innerText = " addicted";
                 document.getElementById('hope').innerHTML = `But don't worry, there's still <a href="help.html" class="hope-link">hope</a>`;
             }
             else if(hours<2 && business){
@@ -101,6 +101,153 @@ function getResult(){
                 document.getElementById('result').innerText = " not addicted";
                 document.getElementById('hope').innerHTML = `You're good! But if you still want to know more about this, click <a href="help.html" class="hope-link">here</a>`;
             }
+
+            setTimeout(()=>{
+                document.getElementById('ad-sect3').style.opacity = "100";
+                document.getElementById('ad-sect3').style.transform = "translateY(0px)";
+            }, 400)
+
         }, 400)
     }, 400)
 }
+
+
+//Animation
+gsap.registerPlugin(ScrollTrigger);
+
+//Home Page
+
+gsap.from("#sect1", {
+    scrollTrigger: {
+        trigger: "#sect1",
+    },
+    y: 50,
+    opacity: 0,
+    duration: 2
+});
+
+gsap.from(".sa1", {
+    scrollTrigger: {
+        trigger: "#sect1",
+    },
+    y:10,
+    stagger: 1,
+    opacity: 0,
+    duration: 2
+})
+
+gsap.from("#sect2", {
+    scrollTrigger: {
+        trigger: "#sect2",
+    },
+    y: 50,
+    opacity: 0,
+    duration: 2
+});
+
+gsap.from("#sect3", {
+    scrollTrigger: {
+        trigger: "#sect3",
+    },
+    y: 100,
+    opacity: 0,
+    duration: 2
+});
+
+gsap.to(".topicons", {
+    scrollTrigger: {
+        trigger: ".topicons",
+        scrub: 1
+    },
+    x:200,
+    rotation:360,
+    duration: 1
+})
+
+gsap.to(".boticons", {
+    scrollTrigger: {
+        trigger: ".boticons",
+        scrub: 1
+    },
+    x:-200,
+    rotation:360,
+    duration: 1
+})
+
+gsap.from(".sa4", {
+    scrollTrigger: {
+        trigger: ".sa4",
+    },
+    y: 50,
+    stagger: 1,
+    opacity: 0,
+    duration: 0.2
+});
+
+
+gsap.from(".card", {
+    scrollTrigger: {
+        trigger: ".card",
+    },
+    delay: 1,
+    y: 50,
+    stagger: 1,
+    opacity: 0,
+    duration: 1
+});
+
+gsap.from("#sect7", {
+    scrollTrigger: {
+        trigger: "#sect7",
+    },
+    y: 50,
+    opacity: 0,
+    duration: 2
+});
+
+gsap.from("#bars", {
+    scrollTrigger: {
+        trigger: "#bars",
+        start: "top center",
+        scrub: 1
+    },
+    opacity: 0,
+    duration: 0.5
+})
+
+gsap.from(".sect9", {
+    scrollTrigger: {
+        trigger: ".sect9"
+    },
+    y: 20,
+    opacity: 0,
+    duration: 1
+});
+
+
+//Addiction Animation
+
+
+gsap.from(".asa1", {
+    scrollTrigger: {
+        trigger: ".asa1",
+    },
+    y: 50,
+    stagger: 1,
+    opacity: 0,
+    duration: 1
+});
+
+gsap.from(".asa2", {
+    scrollTrigger: {
+        trigger: ".asa2",
+    },
+    y: 50,
+    stagger: 1,
+    opacity: 0,
+    duration: 1
+});
+
+
+
+

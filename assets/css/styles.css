@@ -426,6 +426,9 @@ input::-webkit-inner-spin-button {
 .ad-sect3{
     height: 500px;
     font-family: Unbounded, sans-serif;
+    opacity: 0;
+    transition: all 0.8s ease;
+    transform: translateY(20px);
 }
 
 /*Result*/
@@ -494,3 +497,137 @@ input::-webkit-inner-spin-button {
     font-weight: bold;
     transition: all 0.2s ease;
 }
+
+
+/*Sect3*/
+
+.h-sect3{
+    margin-top: 350px;
+    text-align: center;
+    font-family: Unbounded, sans-serif;
+}
+
+.h-sect3 h1{
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+
+/*Sect4*/
+
+.h-sect4 {
+    font-family: Unbounded, sans-serif;
+    margin-top: 350px;
+    position: relative;
+}
+
+.h-sect4 h1{
+    font-size: 12vw;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.h-sect4 h1:hover{
+    text-shadow: -15px 5px black;
+    padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+    .h-sect4 h1{
+        font-size: 9vw;
+    }
+}
+@media (min-width: 768px) {
+    .h-sect4 h1{
+        font-size: 9vw;
+    }
+}
+@media (min-width: 992px) {
+    .h-sect4 h1{
+        font-size: 9vw;
+    }
+}
+@media (min-width: 1200px) {
+    .h-sect4 h1{
+        font-size: 7vw;
+    }
+}
+@media (min-width: 1400px) {
+    .h-sect4 h1{
+        font-size: 6vw;
+    }
+}
+
+.h-list a{
+    text-decoration: none;
+    color: var(--primary);
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.h-list a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background-color: var(--primary);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.h-list a:hover:after{
+    width: 100%;
+    left: 0;
+}
+
+.youtube{
+
+}
+
+.plus{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    font-size: 35px;
+}
+
+
+@media (min-width: 576px) {
+    .plus{
+        font-size: 45px;
+    }
+}
+@media (min-width: 768px) {
+    .h-sect4 h1{
+        font-size: 65px;
+    }
+}
+@media (min-width: 992px) {
+    .h-sect4 h1{
+        font-size: 75px;
+    }
+}
+@media (min-width: 1200px) {
+    .h-sect4 h1{
+        font-size: 85px;
+    }
+}
+@media (min-width: 1400px) {
+    .h-sect4 h1{
+        font-size: 90px;
+    }
+}
+
+
+/*Sect5*/
+
+.h-sect5{
+    font-family: Unbounded, sans-serif;
+    margin-top: 350px;
+    text-align: center;
+    font-weight: bold;
+}
+

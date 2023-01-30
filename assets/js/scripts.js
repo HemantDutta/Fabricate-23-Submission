@@ -1,3 +1,39 @@
+//Home page
+let hsa3display = document.querySelectorAll(".num3");
+let interval = 5000;
+
+function hsa3dis(){
+    hsa3display.forEach((x)=>{
+        let start = 0;
+        let end = parseInt(x.getAttribute("data-val"));
+        let duration = Math.floor(interval/end);
+        let counter = setInterval(()=>{
+            start+=1;
+            x.textContent = start;
+            if(start === end){
+                clearInterval(counter);
+            }
+        }, duration);
+    })
+}
+
+let hsa4display = document.querySelectorAll(".num4");
+interval = 4000;
+function hsa4dis() {
+    hsa4display.forEach((x)=>{
+        let start = 0;
+        let end = parseInt(x.getAttribute("data-val"));
+        let duration = Math.floor(interval/end);
+        let counter = setInterval(()=>{
+            start+=1;
+            x.textContent = start;
+            if(start === end){
+                clearInterval(counter);
+            }
+        }, duration);
+    })
+}
+
 //Addiction Page
 let business = false;
 let hours;
@@ -148,6 +184,7 @@ gsap.from("#sect2", {
 gsap.from("#sect3", {
     scrollTrigger: {
         trigger: "#sect3",
+        onEnter: hsa3dis()
     },
     y: 100,
     opacity: 0,
@@ -177,6 +214,7 @@ gsap.to(".boticons", {
 gsap.from(".sa4", {
     scrollTrigger: {
         trigger: ".sa4",
+        onEnter: hsa4dis()
     },
     y: 50,
     stagger: 1,
@@ -293,7 +331,6 @@ gsap.to(".plus", {
     scrollTrigger: {
         trigger: ".plus",
         start: "bottom 40px",
-        marker: true,
         scrub: 5
     },
     y: 1100,

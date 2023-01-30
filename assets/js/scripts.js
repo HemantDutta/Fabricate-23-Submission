@@ -249,5 +249,66 @@ gsap.from(".asa2", {
 });
 
 
+//Help Page
+
+gsap.from(".hsa1", {
+    scrollTrigger: {
+        trigger: ".hsa1",
+    },
+    y:10,
+    stagger: 1,
+    opacity: 0,
+    duration: 1
+});
+
+gsap.from(".h-sect2", {
+    scrollTrigger: {
+        trigger: ".h-sect2"
+    },
+    y: 20,
+    opacity: 0,
+    duration: 1
+});
+
+gsap.from(".h-sect3", {
+    scrollTrigger: {
+        trigger: ".h-sect3"
+    },
+    y: 20,
+    opacity: 0,
+    duration: 1
+});
+
+gsap.from(".hsa4", {
+    scrollTrigger: {
+        trigger: ".hsa4",
+    },
+    y:10,
+    stagger: 0.5,
+    opacity: 0,
+    duration: 0.5
+});
+
+gsap.to(".plus", {
+    scrollTrigger: {
+        trigger: ".plus",
+        start: "bottom 40px",
+        marker: true,
+        scrub: 5
+    },
+    y: 1100,
+    rotate: 720,
+    duration: 2
+})
+
+gsap.from(".h-sect5", {
+    scrollTrigger: {
+        trigger: ".h-sect5"
+    },
+    y: 20,
+    opacity: 0,
+    duration: 2
+});
+
 
 
